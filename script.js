@@ -34,8 +34,8 @@ for(const country of countries){
     // aSampleString = `<li>${country.name}</li>`;
     // aSampleString = aSampleString + `<li>${country.name}</li>`;
     // aSampleString += `<li>${country.name}</li>`;
-    aSampleString += `<tr><td>${country.name}</td>`;
-    aSampleString += `<td>${country.code}</td></tr>`;
+    aSampleString += `<tr> <td>${country.name}</td>
+                        <td>${country.code}</td> </tr>`;
 }
 
 document.getElementById("myContainer").innerHTML = aSampleString
