@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* table{
+        table {
             border: 1px solid red;
-        } */
+        }
+
         tbody {
             border: 1px solid blue;
         }
-        button {
-            background-color: tomato;
-            border: 0px;
-            margin-top: 10px;
-            margin-left: 45px;
-            padding: 7px 5px;
+
+        table tbody {
+            border: 1px solid blue;
+        }
+
+        table#sampleTable1 tbody {
+            border: 1px solid blue;
         }
     </style>
 </head>
 
 <body>
     <h1>Sample Output</h1>
-    <table id="myTable1" class="mytable" border="1px">
+    <table id="sampleTable1" class="sampleTable">
         <thead>
             <tr>
                 <th>Region</th>
@@ -42,7 +44,7 @@
     </table>
 
     <h1>Modify Table Below Using Load Country Button</h1>
-    <table id="myTable2" class="mytable" border="1px">
+    <table id="sampleTable2" class="sampleTable">
         <thead>
             <tr>
                 <th>Region</th>
@@ -62,6 +64,6 @@
     <button type="button" onclick="loadData()">Load Country</button>
 </body>
 
-<script src="event-func.js"></script>
+<script src="./hw.js"></script>
 
 </html>

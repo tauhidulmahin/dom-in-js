@@ -1,5 +1,4 @@
-let head = "";
-let body = "";
+let countryInfo = "";
 
 const countries = [
   {
@@ -25,19 +24,18 @@ const countries = [
 ];
 
 for (const country of countries) {
-  head += `<tr> 
+  countryInfo += `<tr> 
   <td> ${country.region}</td> 
   <td> ${country.name}</td> 
   <td> ${country.cncode}</td> 
   </tr>`; 
-  // body += `<td> ${country.cncode}</td>`;
 }
 // Function defination
 
 function loadData() {
   // document.getElementById("myTable").innerHTML=`<tr>${head}</tr> <tr>${body}</tr>`;
   const tbodyOfTable2 = document.querySelector("#myTable2 tbody");
-  tbodyOfTable2.innerHTML = `<tr>${head}</tr>`;
+  tbodyOfTable2.innerHTML = countryInfo;
 }
 
 // Function Call
