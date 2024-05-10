@@ -1,19 +1,18 @@
-let lat = ""    ;
+let table = ""    ;
 function getIP() {
-    let ip = document.getElementById("fetchTable").value;
     let url = `https://jsonplaceholder.typicode.com/posts`
     console.log(url);
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            for (const x of data) {
+            for (const user of data) {
 
-                lat += `<tr><td>${x.id}</td> <td>${x.title}</td></tr>`;
+                table += `<tr><td>${user.id}</td> <td>${user.title}</td></tr>`;
             }
             const tbodyOfTable = document.querySelector("#fetchTable tbody");
-            tbodyOfTable.innerHTML = lat;
+            tbodyOfTable.innerHTML = table;
         })
-
+        
         .catch(error => console.error('Error:', error));
 
 }
