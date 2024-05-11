@@ -1,5 +1,4 @@
 let flag = "";
-function getFlag() {
     let url = `https://restcountries.com/v3.1/all`
     fetch(url)
         .then(response => response.json())
@@ -13,5 +12,3 @@ function getFlag() {
             const tbodyOfTable = document.querySelector("#countryFlag");
             tbodyOfTable.innerHTML = flag;
         })
-
-}
